@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>SportStyle - Tienda Deportiva</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; }
+        header { background-color: #222; color: white; padding: 1rem; text-align: center; }
+        nav { background-color: #555; padding: 0.5rem; text-align: center; }
+        nav a { color: white; margin: 0 1rem; text-decoration: none; }
+        section { padding: 2rem; }
+        .productos { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; }
+        .producto { background-color: white; padding: 1rem; border-radius: 8px; width: 250px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .producto img { width: 100%; height: 180px; object-fit: cover; }
+        table { width: 100%; border-collapse: collapse; margin-top: 2rem; }
+        table, th, td { border: 1px solid #999; }
+        th, td { padding: 10px; text-align: left; }
+        footer { background: #222; color: white; text-align: center; padding: 1rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SportStyle</h1>
+        <p>Tu tienda deportiva de confianza</p>
+    </header>
+
+    <nav>
+        <a href="#camisetas">Camisetas</a>
+        <a href="#zapatillas">Zapatillas</a>
+        <a href="#gorros">Gorros</a>
+    </nav>
+
+    <section id="camisetas">
+        <h2>Camisetas</h2>
+        <div class="productos">
+            <div class="producto">
+                <img src="img/camiseta1.jpg" alt="Camiseta Nike">
+                <h3>Camiseta Nike</h3>
+                <p>S/. 89.00</p>
+            </div>
+            <div class="producto">
+                <img src="img/camiseta2.jpg" alt="Camiseta Adidas">
+                <h3>Camiseta Adidas</h3>
+                <p>S/. 95.00</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="zapatillas">
+        <h2>Zapatillas</h2>
+        <div class="productos">
+            <div class="producto">
+                <img src="img/zapatilla1.jpg" alt="Zapatillas Puma">
+                <h3>Zapatillas Puma</h3>
+                <p>S/. 150.00</p>
+            </div>
+            <div class="producto">
+                <img src="img/zapatilla2.jpg" alt="Zapatillas Reebok">
+                <h3>Zapatillas Reebok</h3>
+                <p>S/. 160.00</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gorros">
+        <h2>Gorros</h2>
+        <div class="productos">
+            <div class="producto">
+                <img src="img/gorro1.jpg" alt="Gorro Negro">
+                <h3>Gorro Negro</h3>
+                <p>S/. 35.00</p>
+            </div>
+            <div class="producto">
+                <img src="img/gorro2.jpg" alt="Gorro Blanco">
+                <h3>Gorro Blanco</h3>
+                <p>S/. 38.00</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Base de Datos (Simulada)</h2>
+        <h3>Tabla: Productos</h3>
+        <table>
+            <tr><th>ID</th><th>Nombre</th><th>Categoría</th><th>Precio</th></tr>
+            <tr><td>1</td><td>Camiseta Nike</td><td>Camisetas</td><td>S/. 89.00</td></tr>
+            <tr><td>2</td><td>Zapatillas Puma</td><td>Zapatillas</td><td>S/. 150.00</td></tr>
+            <tr><td>3</td><td>Gorro Negro</td><td>Gorros</td><td>S/. 35.00</td></tr>
+        </table>
+
+        <h3>Tabla: Usuarios</h3>
+        <table>
+            <tr><th>ID</th><th>Nombre</th><th>Email</th></tr>
+            <tr><td>1</td><td>Juan Pérez</td><td>juanp@gmail.com</td></tr>
+            <tr><td>2</td><td>Lucía Soto</td><td>luciasoto@hotmail.com</td></tr>
+        </table>
+
+        <h3>Tabla: Pedidos</h3>
+        <table>
+            <tr><th>ID Pedido</th><th>Usuario</th><th>Producto</th><th>Fecha</th></tr>
+            <tr><td>1</td><td>Juan Pérez</td><td>Zapatillas Puma</td><td>2025-08-04</td></tr>
+            <tr><td>2</td><td>Lucía Soto</td><td>Camiseta Nike</td><td>2025-08-04</td></tr>
+        </table>
+    </section>
+
+    <footer>
+        &copy; 2025 SportStyle | Todos los derechos reservados
+    </footer>
+</body>
+</html>
